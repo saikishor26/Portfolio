@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Kishor's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="dark">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Sai Kishor</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home1">
+      <div class="home1-container">
+        <div class="home1-content">
+          <div class="home1-text">
+            <h1>Hi, I'm <span class="highlight">Sai Kishor</span></h1>
+            <div class="typewriter">
+              <span id="typewriter-text"></span>
+              <span class="cursor">|</span>
+            </div>
+            <p>Full-Stack Developer | MERN Stack | AI & Systems Enthusiast</p>
+
+            <div class="home1-buttons">
+              <div class="btn-resume">
+                <a
+                  href="./assets/resume.pdf"
+                  onclick="window.open(this.href, 'newwindow', 'width=800,height=600'); return false;"
+                  class="btn btn-primary"
+                  target="_blank"
+                >
+                  <i class="fas fa-download"></i> Download Resume
+                </a>
+              </div>
+              <div id="resume-wrapper" style="display: none; margin-top: 2rem">
+                <div
+                  id="resume-viewer"
+                  style="
+                    border: 2px solid var(--primary-color);
+                    border-radius: 10px;
+                  "
+                >
+                  <iframe
+                    src="./assets/resume.pdf"
+                    width="100%"
+                    height="600px"
+                    style="border: none"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="https://github.com/saikishor26"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/saikishor26"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pappalasaikishor@gmail.com" class="social-link">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  href="https://codolio.com/profile/sai_kishor26"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fas fa-code"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home1-image">
+            <img
+              src="https://i.postimg.cc/tCLTcqTq/Pro.jpg"
+              alt="Pappala Sai Kishor"
+              class="profile-pic"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="home1-bg"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hi I'm Sai Kishor, a passionate full-stack developer skilled in
+              the MERN stack, with interests in AI, networking, and system
+              design. I love building real-time apps, solving complex problems,
+              and constantly learning to create impactful tech solutions.
+            </p>
+          </div>
+
+          <div class="education-section">
+            <div class="education-card">
+              <h3>Education</h3>
+              <div class="edu-content">
+                <div class=".space">
+                  <h4 style="margin-bottom: 5px">B.Tech - Computer Science</h4>
+                  <p class="institution">
+                    Vignan's Institute of Information Technology
+                  </p>
+                  <p class="duration" style="margin-bottom: 18px">
+                    2021-2025 | CGPA: 8.77
+                  </p>
+                </div>
+                <div class=".space">
+                  <h4 style="margin-bottom: 5px">Senior Secondary School</h4>
+                  <p class="institution">Sri Chaitanya Junior College</p>
+                  <h6 class="duration" style="margin-bottom: 18px">
+                    2019-2021 | Percentage: 93.9
+                  </h6>
+                </div>
+
+                <div class=".space">
+                  <h4 style="margin-bottom: 5px">Secondary School</h4>
+                  <p class="institution">Ashoka School</p>
+                  <p class="duration">2018-2019 | CGPA: 9.3</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coursework-card">
+              <h3>Coursework</h3>
+              <div class="coursework-content">
+                <div class="course-item">Data Structures</div>
+                <div class="course-item">Algorithms</div>
+                <div class="course-item">DBMS</div>
+                <div class="course-item">Operating Systems</div>
+                <div class="course-item">Computer Networks</div>
+                <div class="course-item">Database Management</div>
+                <div class="course-item">Software Engineering</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container-skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-btn">C</div>
+          <div class="skill-btn">C++</div>
+          <div class="skill-btn">Python</div>
+          <div class="skill-btn">HTML</div>
+          <div class="skill-btn">CSS</div>
+          <div class="skill-btn">JavaScript</div>
+          <div class="skill-btn">SQL</div>
+          <div class="skill-btn">Git</div>
+          <div class="skill-btn">MongoDB</div>
+          <div class="skill-btn">ExpressJS</div>
+          <div class="skill-btn">ReactJS</div>
+          <div class="skill-btn">Node.js</div>
+          <div class="skill-btn">REST APIs</div>  
+          <div class="skill-btn">Version Control</div>
+          <div class="skill-btn">Computer Networks</div>
+          <div class="skill-btn">Operating System</div>
+          <div class="skill-btn">Problem Solving</div>
+          <div class="skill-btn">Data Structures</div>
+          <div class="skill-btn">Database Management</div>
+          <div class="skill-btn">Algorithms</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>E-commerce Web Page</h3>
+              <a
+                href="https://github.com/saikishor26/Ecommerce"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="project-timeline">Feb 2025 - April 2025</div>
+            <p>
+              A modern e-commerce platform with advanced filtering and secure
+              authentication system.
+            </p>
+
+            <div class="tech-stack">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span>ReactJS</span>
+                <span>TailwindCSS</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+
+            <div class="features">
+              <h4>Features:</h4>
+              <ul>
+                <li>• Filtering</li>
+                <li>• Secure Login</li>
+                <li>• Clean UI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Weather Forecast Web App</h3>
+              <a
+                href="https://github.com/saikishor26/Weather-App"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="project-timeline">July 2024 - August 2024</div>
+            <p>
+              Real-time weather application with detailed forecasts and
+              beautiful responsive design.
+            </p>
+
+            <div class="tech-stack">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span>ReactJS</span>
+                <span>TailwindCSS</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+
+            <div class="features">
+              <h4>Features:</h4>
+              <ul>
+                <li>• Real-time Weather</li>
+                <li>• 7-day Forecast</li>
+                <li>• Responsive UI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Helping Hands Platform</h3>
+              <a
+                href="https://github.com/saikishor26/Helping-Hands"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="project-timeline">May 2023 - July 2023</div>
+            <p>
+              A community platform connecting people in need with helpful
+              organizations and trusts.
+            </p>
+
+            <div class="tech-stack">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+              </div>
+            </div>
+
+            <div class="features">
+              <h4>Features:</h4>
+              <ul>
+                <li>• User Request Posting</li>
+                <li>• Trusts Response System</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-slider">
+          <button class="slider-btn prev-btn" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+              <div class="certification-card">
+                <div class="cert-image">
+                  <img src="./assets/fullstack.png" alt="Certificate" />
+                </div>
+                <div class="cert-content">
+                  <h3>Full Stack Web Development</h3>
+                  <p class="cert-date">January 2025</p>
+                </div>
+              </div>
+              <div class="certification-card">
+                <div class="cert-image">
+                  <img src="./assets/ccna_intro.png" alt="Certificate" />
+                </div>
+                <div class="cert-content">
+                  <h3>CCNA: Introduction to Networks</h3>
+                  <p class="cert-date">June 2024</p>
+                </div>
+              </div>
+              <div class="certification-card">
+                <div class="cert-image">
+                  <img src="./assets/bits.png" alt="Certificate" />
+                </div>
+                <div class="cert-content">
+                  <h3>Bits and Bytes of Computer Networking</h3>
+                  <p class="cert-date">May 2024</p>
+                </div>
+              </div>
+              <div class="certification-card">
+                <div class="cert-image">
+                  <img src="./assets/dbms.png" alt="Certificate" />
+                </div>
+                <div class="cert-content">
+                  <h3>Database Management System</h3>
+                  <p class="cert-date">September 2023</p>
+                </div>
+              </div>
+              <div class="certification-card">
+                <div class="cert-image">
+                  <img src="./assets/javascript.png" alt="Certificate" />
+                </div>
+                <div class="cert-content">
+                  <h3>JavaScript Essentials</h3>
+                  <p class="cert-date">July 2023</p>
+                </div>
+              </div>
+              <div class="certification-card">
+                <div class="cert-image">
+                  <img src="./assets/problemsolving.png" alt="Certificate" />
+                </div>
+                <div class="cert-content">
+                  <h3>Problem Soving</h3>
+                  <p class="cert-date">Dec 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn next-btn" id="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-content">
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>
+                  MERN Stack Developer Intern<br />
+                  <p class="exp-company">Codtech IT Solution</p>
+                </h3>
+              </div>
+              <div class="experience-timeline">Feb 2025 - Mar 2025</div>
+            </div>
+
+            <p>
+              Built responsive, real-time applications including weather web
+              apps and Chrome extensions. Worked with modern technologies and
+              gained experience in full-stack development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <div class="contact-items">
+              <div
+                class="contact-item"
+                onclick="window.open('mailto:pappalasaikishor@gmail.com','_blank')"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>pappalasaikishor@gmail.com</span>
+              </div>
+              <div
+                class="contact-item"
+                onclick="window.open('tel:+917702034533','_blank')"
+              >
+                <i class="fas fa-phone"></i>
+                <span>+91 7702034533</span>
+              </div>
+              <div class="contact-item" style="cursor: default">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Visakhapatnam</span>
+              </div>
+              <div
+                class="contact-item"
+                onclick="window.open('https://github.com/saikishor26','_blank')"
+              >
+                <i class="fab fa-github"></i>
+                <span>github.com/saikishor26</span>
+              </div>
+              <div
+                class="contact-item"
+                onclick="window.open('https://codolio.com/profile/sai_kishor26','_blank')"
+              >
+                <i class="fas fa-code"></i>
+                <span>codolio.com/profile/sai_kishor26</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-pad">
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social-links">
+            <a
+              href="mailto:pappalasaikishor@gmail.com"
+              target="_blank"
+              aria-label="Gmail"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/sai_kishor26/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://x.com/SaiKishor05"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/saikishor26/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/saikishor26"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="footer-text">
+            <p>&copy; 2024 Pappala Sai Kishor. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
