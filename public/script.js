@@ -1,33 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const themeToggle = document.getElementById("themeToggle");
-  const themeIcon = document.getElementById("themeIcon");
-  const body = document.body;
-
-  body.classList.add("dark");
-  themeIcon.className = "fas fa-sun";
-
-  themeToggle.addEventListener("click", function () {
-    body.classList.toggle("dark");
-
-    if (body.classList.contains("dark")) {
-      themeIcon.className = "fas fa-sun";
-    } else {
-      themeIcon.className = "fas fa-moon";
-    }
-  });
-});
-
-const hamburger = document.getElementById("hamburger");
+const ham1 = document.getElementById("ham1");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("active");
+ham1.addEventListener("click", function () {
+  ham1.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
+    ham1.classList.remove("active");
     navMenu.classList.remove("active");
   });
 });
@@ -265,7 +246,7 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
-    hamburger.classList.remove("active");
+    ham1.classList.remove("active");
     navMenu.classList.remove("active");
   }
 });
