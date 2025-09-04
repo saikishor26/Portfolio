@@ -16,7 +16,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 const typewriterText = document.getElementById("typewriter-text");
 const texts = [
   "Full-Stack Developer",
-  "MERN Stack Developer",
+  "Network Engineer",
   "Problem Solver",
   "AI Enthusiast",
 ];
